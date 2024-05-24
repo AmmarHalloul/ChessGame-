@@ -1,5 +1,8 @@
 # chess_game
-a simple chess game written in python (pygame)
+a simple chess game written in python (pygame). you can play against the computer or pass & play with a friend.
+
+<img src="screenshot/img1.png" style='margin: 10' width="250"/>
+<img src="screenshot/img2.png" style='margin: 10' width="250"/>
 
 ## Dependencies
 python packages: 
@@ -17,4 +20,4 @@ pip install pyinstaller
 pyinstaller chess_game.spec
 ```
 ## Play the game
-your can download this from the [release page]().
+your can download this from the [release page](https://github.com/AmmarHalloul/chess_game/releases/tag/game).
