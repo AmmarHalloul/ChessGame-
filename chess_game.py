@@ -3,12 +3,16 @@ import chess.engine
 import pygame
 import pygame_menu
 from os import path
+from os import listdir
+
 
 
 def GetPath(file):
     return path.abspath(path.join(path.dirname(__file__), file))
 
-
+def GetEnginePath():
+    e = GetPath("engine")
+    return path.join(e, listdir(e)[0])
 
 class GameOptions:
     against_engine = True
@@ -20,7 +24,7 @@ options = GameOptions()
 #main
 pygame.init()
 
-engine = chess.engine.SimpleEngine.popen_uci(GetPath("stockfish-windows-2022-x86-64-avx2.exe"))
+engine = chess.engine.SimpleEngine.popen_uci(GetEnginePath())
 
 window_size = 800
 square_size = window_size // 8 

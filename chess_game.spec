@@ -5,7 +5,7 @@ a = Analysis(
     ['chess_game.py'],
     pathex=[],
     binaries=[],
-    datas=[('./sprite', './sprite'), ('./stockfish-windows-2022-x86-64-avx2.exe', '.')],
+    datas=[('./sprite', './sprite'), ('./engine', './engine')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
